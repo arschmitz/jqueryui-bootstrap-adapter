@@ -1,0 +1,28 @@
+/* Bottstrap uses a tag in selector and we use a div */
+.ui-menu-item-wrapper {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;  
+}
+
+/* UI utility class to accessibly hide an input */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* small fix for selectmenu icon */
+.ui-selectmenu-text {
+  float: left;
+  margin-right: .75em;
+}
