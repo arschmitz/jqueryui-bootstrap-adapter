@@ -1,111 +1,384 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-  <link href="demo/demo.css" rel="stylesheet" type="text/css" />
-  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="external/jquery-ui.min.js"></script>
-  <script src="dist/jqueryui-bootstrap-adapter.min.js"></script>
-  <script src="demo/demo.js"></script>
-  <meta charset="utf-8">
-  <title>JS Bin</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="demo/demo.css" rel="stylesheet" type="text/css" />
+	<link href="external/syntax.css" rel="stylesheet" type="text/css"/>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="external/jquery-ui.min.js"></script>
+	<script src="dist/jqueryui-bootstrap-adapter.min.js"></script>
+	<script src="external/syntax.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+	<script src="demo/code_sample.js"></script>
+	<script src="demo/demo.js"></script>
+	<meta charset="utf-8">
+	<title>jQuery UI + Bootstrap Rocks</title>
 </head>
-<body>
-  <h1>Buttons</h1>
-  <button id="button">Button</button>
-  <button id="button-primary">Button Primary</button>
-  <button id="button-success">Button Success</button>
-  <button id="button-info">Button Info</button>
-  <button id="button-error">Button error</button>
-  <button id="button-warning">Button Warning</button>
-  <button id="button-danger">Button Danger</button>
-  <button id="button-large">Button Large</button>
-  <button id="button-small">Button Small</button>
-  <button id="button-xsmall">Button Extra Small</button>
-  <button id="button-icon">Button with icon </button>
-  <h1>Selectmenu</h1>
-  <select id="select">
-    <option>Selectmenu</option>
-    <option>Option 1</option>
-    <option>Option 2</option> 
-    <option>option 3</option>
-  </select>
-  <h1>Split Button</h1>
-  <div class="btn-group">
-      <button id="button-split">Run last option</button>
-      <select id="select-split">
-          <option>Open...</option>
-          <option>Save</option>
-          <option>Delete</option>
-      </select>
-  </div>
-  <h1>Tabs</h1>
-  <div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Nunc tincidunt</a></li>
-    <li><a href="#tabs-2">Proin dolor</a></li>
-    <li><a href="#tabs-3">Aenean lacinia</a></li>
-  </ul>
-  <div id="tabs-1">
-    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  </div>
-  <div id="tabs-2">
-    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-  </div>
-  <div id="tabs-3">
-    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-    </div>
+<body data-spy="scroll" data-target=".navbar-spy">
+<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+	<div clas="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">jQuery UI Bootstrap Adapter</a>
+		</div>
+		<div id="navbar" class="navbar-spy navbar-collapse collapse" >
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#component-button">Buttons</a></li>
+				<li><a href="#component-selectmenu">Selectmenu</a></li>
+				<li><a href="#component-splitbutton">Split Button</a></li>
+				<li><a href="#component-tabs">Tabs</a></li>
+				<li><a href="#component-accordion">Accordion</a></li>
+				<li><a href="#component-tooltip">Tooltip</a></li>
+				<li><a href="#component-dialog">Dialog</a></li>
+				<li><a href="#component-progressbar">Progressbar</a></li>
+				<li><a href="#component-menu">Menu</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="jumbotron">
+	<div class="container">
+		<h1>jQuery UI + Bootstrap</h1>
+		<p>The jQuery UI Bootstrap adapter is a very small js file ( 1.6kb min and gzip ) which changes the jQuery UI Classes presets to use the Twitter Bootstrap theme</p>
+	</div>
 </div>
-  <h1>Accordion</h1>
-  <div class="panel-group">
-    <div class="panel">
-      <div>
-        <h4 class="panel-title">Section 1</h4>
-      </div>
-      <div class="panel-body">
-        <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
-      </div>
-    </div>
-    <div class="panel">
-      <div>
-        <h4 class="panel-title">Section 2</h4>
-      </div>
-      <div class="panel-body">
-        <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
-      </div>
-    </div>
-  <div class="panel">
-      <div>
-        <h4 class="panel-title">Section 3</h4>
-      </div>
-      <div class="panel-body">
-        <p>
-        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-  <h1>Tooltip</h1>
-  <p>Tooltips can be attached to any element. When you hover
+<div class="container">
+	<div id="component-button" class="scroll-link"></div>
+	<h1 id="component-button">Buttons</h1>
+	<div class="component-container container" id="button-container">
+		<h2>Button colors</h2>
+		<div class="sample-container button-color">
+			<button>Button</button>
+			<button class="btn-primary">Button Primary</button>
+			<button class="btn-success">Button Success</button>
+			<button class="btn-info">Button Info</button>
+			<button class="btn-warning">Button Warning</button>
+			<button class="btn-danger">Button Danger</button>
+			<script>
+				$(function(){
+					// Instantiate a button
+					$( ".button-color button" ).button();
+				});
+			</script>
+		</div>
+		<hr>
+		<h2>Button Sizes</h2>
+		<div class="sample-container button-size">
+			<button class="btn-lg">Button Large</button>
+			<button>Button Default</button>
+			<button class="btn-sm">Button Small</button>
+			<button class="btn-xs">Button Extra Small</button>
+			<script>
+				$(function(){
+					// Instantiate a button
+					$( ".button-size button" ).button();
+				});
+			</script>
+		</div>
+		<hr>
+		<h2>Buttons With Icons</h2>
+		<div class="sample-container">
+			<button id="button-tree">Button with tree </button>
+			<button id="button-music">Button with music </button>
+			<button id="button-heart">Button with heart </button>
+			<button id="button-fire">Button with fire </button>
+			<script>
+			$(function(){
+				// Instantiate a button with an icon
+				$( "#button-tree" ).button({
+					"icon": "glyphicon-tree-conifer"
+				});
+				$( "#button-music" ).button({
+					"icon": "glyphicon-music"
+				});
+				$( "#button-heart" ).button({
+					"icon": "glyphicon-heart"
+				});
+				$( "#button-fire" ).button({
+					"icon": "glyphicon-fire"
+				});
+			});
+			</script>
+		</div>
+	</div>
+	<div id="component-selectmenu" class="scroll-link"></div>
+	<h1>Selectmenu</h1>
+	<div class="component-container container">
+		<h2>Selectmenu Colors</h2>
+		<div class="sample-container">
+			<select class="select-default">
+				<option>Default</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<select class="select-primary">
+				<option>Primary</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<select class="select-success">
+				<option>Success</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<select class="select-info">
+				<option>Info</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<select class="select-warning">
+				<option>Warning</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<select class="select-danger">
+				<option>Danger</option>
+				<option>Option 1</option>
+				<option>Option 2</option> 
+				<option>option 3</option>
+			</select>
+			<script>
+			$(function(){
+				$( ".select-default" ).selectmenu();
+				$( ".select-primary" ).selectmenu({
+					classes: {
+						"ui-selectmenu-button": "btn btn-primary"
+					}
+				});
+				$( ".select-success" ).selectmenu({
+					classes: {
+						"ui-selectmenu-button": "btn btn-success"
+					}
+				});
+				$( ".select-info" ).selectmenu({
+					classes: {
+						"ui-selectmenu-button": "btn btn-info"
+					}
+				});
+				$( ".select-warning" ).selectmenu({
+					classes: {
+						"ui-selectmenu-button": "btn btn-warning"
+					}
+				});
+				$( ".select-danger" ).selectmenu({
+					classes: {
+						"ui-selectmenu-button": "btn btn-danger"
+					}
+				});
+			});
+			</script>
+		</div>
+		<h2>Selectmenu Icons</h2>
+		<div class="sample-container">
+			<select class="select-tree">
+				<option>Trees</option>
+				<option>Pine</option>
+				<option>Oak</option> 
+				<option>Maple</option>
+			</select>
+			<select class="select-music">
+				<option>Genres</option>
+				<option>Rock</option>
+				<option>Country</option> 
+				<option>Rap</option>
+			</select>
+			<select class="select-film">
+				<option>Movie Type</option>
+				<option>Action</option>
+				<option>Documentary</option> 
+				<option>Romantic</option>
+			</select>
+			<script>
+			$(function(){
+				$( ".select-tree" ).selectmenu({
+					icons: {
+						button: "glyphicon glyphicon-tree-conifer"
+					}
+				});
+				$( ".select-music" ).selectmenu({
+					icons: {
+						button: "glyphicon glyphicon-music"
+					}
+				});
+				$( ".select-film" ).selectmenu({
+					icons: {
+						button: "glyphicon glyphicon-film"
+					}
+				});
+			});
+			</script>
+		</div>
+	</div>
+	<div id="component-splitbutton" class="scroll-link"></div>
+	<h1>Split Button</h1>
+	<div class="component-container container">
+		<h2>Split Buttons</h2>
+		<div class="sample-container">
+			<div class="btn-group">
+					<button id="button-split">Run last option</button>
+					<select id="select-split">
+							<option>Open...</option>
+							<option>Save</option>
+							<option>Delete</option>
+					</select>
+			</div>
+			<script>
+			$(function(){
+				// Instantiate an icon only selectmenu for split button
+				$( "#select-split" ).selectmenu({
+					classes: {
+						"ui-selectmenu-text": "sr-only"
+					}
+				});
+
+				// Instantiate a button for split button
+				$( "#button-split" ).button();
+			});
+			</script>
+		</div>
+	</div>
+	<div id="component-tabs" class="scroll-link"></div>
+	<h1>Tabs</h1>
+	<div class="component-container container">
+		<h2>Tabs</h2>
+		<div class="sample-container">
+			<div id="tabs">
+				<ul>
+					<li class="active"><a href="#tabs-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-2">Proin dolor</a></li>
+					<li><a href="#tabs-3">Aenean lacinia</a></li>
+				</ul>
+				<div id="tabs-1">
+					<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+				</div>
+				<div id="tabs-2">
+					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				</div>
+				<div id="tabs-3">
+					<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+				</div>
+			</div>
+			<script>
+			$(function(){	
+				// Instantiate UI tabs we need to use the activate callback to toggle the
+				// active class since UI tabs have no active class on the panel
+				$( "#tabs" ).tabs({
+					active: 0,
+					activate: function( e, ui ) {
+						if( ui.oldPanel ) {
+							ui.oldPanel.toggleClass( "active" );
+						}
+						if( ui.newPanel ) {
+							ui.newPanel.ToggleClass( "active" );
+						}
+					}
+				});
+			});
+			</script>
+		</div>
+	</div>
+	<div id="component-accordion" class="scroll-link"></div>
+	<h1>Accordion</h1>
+	<div class="panel-group">
+		<div class="panel">
+			<div>
+				<h4 class="panel-title">Section 1</h4>
+			</div>
+			<div class="panel-body">
+				<p>
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				</p>
+			</div>
+		</div>
+		<div class="panel">
+			<div>
+				<h4 class="panel-title">Section 2</h4>
+			</div>
+			<div class="panel-body">
+				<p>
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				</p>
+			</div>
+		</div>
+		<div class="panel">
+			<div>
+				<h4 class="panel-title">Section 3</h4>
+			</div>
+			<div class="panel-body">
+				<p>
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="component-tooltip" class="scroll-link"></div>
+	<h1>Tooltip</h1>
+	<p>Tooltips can be attached to any element. When you hover
 the <a href="#" title="That&apos;s what this widget is">element</a> with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
-  <div id="dialog" title="jQuery UI + Bootstrap">I'm a dialog!</div>
-  <h1>Progressbar</h1>
-  <div id="progressbar"></div>
+	<div id="component-dialog" class="scroll-link"></div>
+	<h1>Dialog</h1>
+	<button id="open-dialog">Open Dialog</button>
+	<div id="dialog" title="jQuery UI + Bootstrap">I'm a dialog!</div>
+	<div id="component-progressbar" class="scroll-link"></div>
+	<h1>Progressbar</h1>
+	<div id="progressbar"></div>
+	<div id="component-menu" class="scroll-link"></div>
+	<h1>Menu</h1>
+	<ul id="menu">
+		<li class="ui-state-disabled"><div>Aberdeen</div></li>
+		<li><div>Ada</div></li>
+		<li><div>Adamsville</div></li>
+		<li><div>Addyston</div></li>
+		<li><div>Delphi</div>
+			<ul>
+				<li class="ui-state-disabled"><div>Ada</div></li>
+				<li><div>Saarland</div></li>
+				<li><div>Salzburg an der schönen Donau</div></li>
+			</ul>
+		</li>
+		<li><div>Saarland</div></li>
+		<li><div>Salzburg</div>
+			<ul>
+				<li><div>Delphi</div>
+					<ul>
+						<li><div>Ada</div></li>
+						<li><div>Saarland</div></li>
+						<li><div>Salzburg</div></li>
+					</ul>
+				</li>
+				<li><div>Delphi</div>
+					<ul>
+						<li><div>Ada</div></li>
+						<li><div>Saarland</div></li>
+						<li><div>Salzburg</div></li>
+					</ul>
+				</li>
+				<li><div>Perch</div></li>
+			</ul>
+		</li>
+		<li class="ui-state-disabled"><div>Amesville</div></li>
+	</ul>
+</div>
 </body>
 </html>

@@ -1,94 +1,9 @@
 $(function(){
-	 // Instantiate a button
-  $( "#button" ).button();
-  
-  // Instantiate a button with various styles
-  $( "#button-primary" ).button({
-    classes: {
-      "ui-button": "btn btn-primary"
-    }
-  });
-  $( "#button-success" ).button({
-    classes: {
-      "ui-button": "btn btn-success"
-    }
-  });
-  $( "#button-info" ).button({
-    classes: {
-      "ui-button": "btn btn-info"
-    }
-  });
-  $( "#button-error" ).button({
-    classes: {
-      "ui-button": "btn btn-error"
-    }
-  });
-  $( "#button-warning" ).button({
-    classes: {
-      "ui-button": "btn btn-warning"
-    }
-  });
-  $( "#button-danger" ).button({
-    classes: {
-      "ui-button": "btn btn-danger"
-    }
-  });
-  $( "#button-large" ).button({
-    classes: {
-      "ui-button": "btn btn-default btn-lg"
-    }
-  });
-  $( "#button-small" ).button({
-    classes: {
-      "ui-button": "btn btn-default btn-sm"
-    }
-  });
-  $( "#button-xsmall" ).button({
-    classes: {
-      "ui-button": "btn btn-default btn-xs"
-    }
-  });
-  
-  // Instantiate a button with an icon
-  $( "#button-icon" ).button({
-    "icon": "glyphicon-tree-conifer"
-  });
-  
-  // Instantiate a selectmenu
-  $( "#select" ).selectmenu({
-    width: "auto",
-    icons: {
-      button: "caret select-icon"
-    }
-  });
-  
-  // Instantiate an icon only selectmenu for split button
-  $( "#select-split" ).selectmenu({
-    classes: {
-      "ui-selectmenu-text": "sr-only"
-    },
-    icons: {
-      button: "caret"
-    },
-    width: "auto"
-  });
-  
-  // Instantiate a button for split button
-  $( "#button-split" ).button();
-  
-  // Instantiate UI tabs we need to use the activate callback to toggle the 
-  // active class since UI tabs have no active class on the panel
-  $( "#tabs" ).tabs({
-    activate: function( e, ui ) {
-      ui.oldPanel.toggleClass( "active" );
-      ui.newPanel.ToggleClass( "active" );
-    }
-  });
   
   // Accordions are a bit complicated because of substantial markup
-  // diferences. We need to make each pane its own accordion and then 
+  // diferences. We need to make each pane its own accordion and then
   // link them using the beforeActivate callback
-  $( ".panel" ).accordion({
+  $( ".panel-group" ).find( ".panel" ).accordion({
     collapsible: true,
     active: "false",
     beforeActivate: function( e , ui ){
@@ -110,7 +25,7 @@ $(function(){
             .addClass( "tooltip-arrow" )
             .appendTo( this );
       }
-    } 
+    }
   });
   
   // Instantiate UI Dialog
@@ -124,6 +39,9 @@ $(function(){
       }
     ]
   });
+  $( "#open-dialog" ).button().click(function(){
+    $( "#dialog" ).dialog( "open" );
+  });
   $( "#progressbar" ).progressbar({
     value: 67,
     classes: {
@@ -131,5 +49,14 @@ $(function(){
       "ui-progressbar-value": "progress-bar"
     }
   });
+  $( "#menu" ).menu();
 
+  // Syntax highlighting for code samples
+  SyntaxHighlighter.all();
+
+  // Apply active style to menu items as we scroll
+  $( ".scroll-link" ).waypoint(function(){
+    $( ".active" ).removeClass( "active" );
+    $( "[href$='" + this.id + "']" ).parent().addClass( "active" );
+  });
 });

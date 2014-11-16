@@ -53,6 +53,26 @@
 
 })(jQuery);
 ;/*!
+ * jQuery UI Menu Bootstrap Adapter
+ *
+ *
+ * Copyright 2014 Alexander Schmitz
+ * Released under the MIT license.
+ */
+(function( $, undefined ) {
+
+	// Conversion of menu classes to Bootstrap
+	$.extend( $.ui.menu.prototype.options.classes, {
+		"ui-menu": "list-group",
+		"ui-menu-icons": "",
+		"ui-menu-icon": "glyphicon glyphicon-chevron-right",
+		"ui-menu-item": "list-group-item",
+		"ui-menu-divider": "",
+		"ui-menu-item-wrapper": ""
+	});
+
+})(jQuery);
+;/*!
  * jQuery UI Progressbar Bootstrap Adapter
  *
  *
@@ -81,7 +101,8 @@
 		"ui-selectmenu-button": "btn btn-default dropdown-toggle",
 		"ui-selectmenu-open": "open"
 	});
-
+	$.ui.selectmenu.prototype.options.icons.button = "caret";
+	$.ui.selectmenu.prototype.options.width = "auto";
 })(jQuery);
 ;/*!
  * jQuery UI Tabs Bootstrap Adapter

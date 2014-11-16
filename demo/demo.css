@@ -1,7 +1,25 @@
 /* these rules are just to make the demo look pretty */
-body {
-  padding: 1em;
-}
 .btn {
   margin-bottom:.3em;
+}
+.ui-menu {
+	width: 300px;
+}
+.scroll-link {
+	position:relative;
+	top: -50px;
+}
+.component-container {
+	border-radius: 4px;
+	border: solid 1px #ccc;
+	padding: 1em;
+}
+.sample-accordion .ui-accordion-content {
+	background: #333;
+}
+.sample-accordion {
+	margin-bottom: 3em;
+}
+.toolbar {
+	display: none;
 }

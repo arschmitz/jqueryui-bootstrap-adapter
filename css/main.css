@@ -6,7 +6,9 @@
   font-weight: 400;
   line-height: 1.42857143;
   color: #333;
-  white-space: nowrap;  
+  white-space: nowrap;
+  position: relative;
+padding: 3px 1em 3px .4em;
 }
 
 /* UI utility class to accessibly hide an input */
@@ -25,4 +27,20 @@
 .ui-selectmenu-text {
   float: left;
   margin-right: .75em;
+}
+.ui-menu-item .ui-menu{
+  position:absolute;
+}
+.ui-menu .ui-menu-icon {
+  left: auto;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+.ui-selectmenu-menu {
+  display:none;
+}
+.ui-selectmenu-menu.open {
+  display:block;
 }
