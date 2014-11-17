@@ -44,3 +44,9 @@ padding: 3px 1em 3px .4em;
 .ui-selectmenu-menu.open {
   display:block;
 }
+.tab-pane {
+  margin-top: 1em;
+}
+.panel-title {
+  display:inline;
+}

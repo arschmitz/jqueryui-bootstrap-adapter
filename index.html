@@ -52,6 +52,16 @@
 	<div id="component-button" class="scroll-link"></div>
 	<h1 id="component-button">Buttons</h1>
 	<div class="component-container container" id="button-container">
+		<h2>The button widget</h2>
+		<h2><small>Enhances standard form elements like buttons, inputs and anchors to themeable buttons with appropriate hover and active styles.</small></h2>
+		<p><a href="http://api.jqueryui.com/button/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-button": "btn btn-default",
+"ui-button-icon": "glyphicon"</pre>
+	</div>
+	<br/>
+	<div class="component-container container">
 		<h2>Button colors</h2>
 		<div class="sample-container button-color">
 			<button>Button</button>
@@ -109,6 +119,22 @@
 	</div>
 	<div id="component-selectmenu" class="scroll-link"></div>
 	<h1>Selectmenu</h1>
+	<div class="component-container container" id="button-container">
+		<h2>The selectmenu widget</h2>
+		<h2><small>Duplicates and extends the functionality of a native HTML select element to overcome the limitations of the native control.</small></h2>
+		<p><a href="http://api.jqueryui.com/selectmenu/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-selectmenu-button": "btn btn-default dropdown-toggle",
+"ui-selectmenu-open": "open"</pre>
+		<h4>In addition the following option defaults are also changed</h4>
+		<pre>
+"icons": {
+	"button": "caret"
+}
+"width": "auto"</pre>
+	</div>
+	<br/>
 	<div class="component-container container">
 		<h2>Selectmenu Colors</h2>
 		<div class="sample-container">
@@ -222,6 +248,13 @@
 	</div>
 	<div id="component-splitbutton" class="scroll-link"></div>
 	<h1>Split Button</h1>
+	<div class="component-container container" id="button-container">
+		<h2>The splitbutton</h2>
+		<h2><small>Combines a regular button and a dropdown into a single button. the split button is not a widget in jQuery UI on its own but instead is just a combination of a button widget and a selectmenu widget in a container.</small></h2>
+		<p><a href="http://api.jqueryui.com/controlgroup/splitbutton">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes no changes specificly for the split button this is encluded as an example.</h4>
+	</div>
+	<br/>
 	<div class="component-container container">
 		<h2>Split Buttons</h2>
 		<div class="sample-container">
@@ -250,39 +283,167 @@
 	</div>
 	<div id="component-tabs" class="scroll-link"></div>
 	<h1>Tabs</h1>
+	<div class="component-container container" id="button-container">
+		<h2>The tabs widget</h2>
+		<h2><small>A single content area with multiple panels, each associated with a header in a list.</small></h2>
+		<p><a href="http://api.jqueryui.com/tabs/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-tabs-nav": "nav nav-tabs",
+"ui-tabs-panel": "tab-pane",
+"ui-tabs-active": "active"</pre>
+	</div>
+	<br/>
 	<div class="component-container container">
 		<h2>Tabs</h2>
 		<div class="sample-container">
 			<div id="tabs">
 				<ul>
-					<li class="active"><a href="#tabs-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-1">Nunc tincidunt</a></li>
 					<li><a href="#tabs-2">Proin dolor</a></li>
 					<li><a href="#tabs-3">Aenean lacinia</a></li>
 				</ul>
 				<div id="tabs-1">
-					<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					<p>
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+					</p>
 				</div>
 				<div id="tabs-2">
-					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					<p>
+					Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+					suscipit faucibus urna.
+					</p>
 				</div>
 				<div id="tabs-3">
-					<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-					<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					</p>
+					<ul>
+						<li>List item one</li>
+						<li>List item two</li>
+						<li>List item three</li>
+					</ul>
 				</div>
 			</div>
 			<script>
-			$(function(){	
-				// Instantiate UI tabs we need to use the activate callback to toggle the
-				// active class since UI tabs have no active class on the panel
-				$( "#tabs" ).tabs({
-					active: 0,
-					activate: function( e, ui ) {
-						if( ui.oldPanel ) {
-							ui.oldPanel.toggleClass( "active" );
-						}
-						if( ui.newPanel ) {
-							ui.newPanel.ToggleClass( "active" );
-						}
+			$(function(){
+				// Instantiate UI tabs
+				$( "#tabs" ).tabs();
+			});
+			</script>
+		</div>
+		<h2>Collapsible tabs</h2>
+		<div class="sample-container">
+			<div id="tabs-collapsible">
+				<ul>
+					<li><a href="#tabs-c-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-c-2">Proin dolor</a></li>
+					<li><a href="#tabs-c-3">Aenean lacinia</a></li>
+				</ul>
+				<div id="tabs-c-1">
+					<p><strong>Click this tab again to close the content pane.</strong></p>
+					<p>
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+					</p>
+				</div>
+				<div id="tabs-c-2">
+					<p><strong>Click this tab again to close the content pane.</strong></p>
+					<p>
+					Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+					suscipit faucibus urna.
+					</p>
+				</div>
+				<div id="tabs-c-3">
+					<p><strong>Click this tab again to close the content pane.</strong></p>
+					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					</p>
+					<ul>
+						<li>List item one</li>
+						<li>List item two</li>
+						<li>List item three</li>
+					</ul>
+				</div>
+			</div>
+			<script>
+			$(function(){
+				// Instantiate UI tabs with collapsible true
+				$( "#tabs-collapsible" ).tabs({
+					collapsible: true
+				});
+			});
+			</script>
+		</div>
+		<h2>Vertical tabs</h2>
+		<div class="sample-container">
+			<div id="tabs-vertical">
+				<ul>
+					<li><a href="#tabs-v-1">Nunc tincidunt</a></li>
+					<li><a href="#tabs-v-2">Proin dolor</a></li>
+					<li><a href="#tabs-v-3">Aenean lacinia</a></li>
+				</ul>
+				<div id="tabs-v-1">
+					<p>
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+					</p>
+				</div>
+				<div id="tabs-v-2">
+					<p>
+					Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+					suscipit faucibus urna.
+					</p>
+				</div>
+				<div id="tabs-v-3">
+					<p>
+					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					</p>
+					<ul>
+						<li>List item one</li>
+						<li>List item two</li>
+						<li>List item three</li>
+					</ul>
+				</div>
+			</div>
+			<style>
+			#tabs-vertical ul{
+				display: inline-block;
+				width:20%;
+				margin-right: 5%;
+			}
+			#tabs-vertical .tab-pane {
+				display: inline-block;
+				width: 70%;
+				vertical-align: top;
+			}
+			</style>
+			<script>
+			$(function(){
+				// Instantiate UI tabs vertical
+				$( "#tabs-vertical" ).tabs({
+					classes: {
+						"ui-tabs-nav": "nav nav-pills nav-stacked"
 					}
 				});
 			});
@@ -291,51 +452,247 @@
 	</div>
 	<div id="component-accordion" class="scroll-link"></div>
 	<h1>Accordion</h1>
-	<div class="panel-group">
-		<div class="panel">
-			<div>
-				<h4 class="panel-title">Section 1</h4>
+	<div class="component-container container" id="button-container">
+		<h2>The accordion widget</h2>
+		<h2><small>Displays collapsible content panels for presenting information in a limited amount of space.</small></h2>
+		<p><a href="http://api.jqueryui.com/accordion/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-accordion": "panel panel-default",
+"ui-accordion-content": "panel-collapse collapse",
+"ui-accordion-content-active": "in",
+"ui-accordion-header": "panel-heading"</pre>
+		<h3 class="bg-info"><strong>Notice:</strong> The accordion widget due to substantial differences in markup requires some extra javascript to function please view source on examples</h3>
+	</div>
+	<br/>
+	<div class="component-container container">
+		<h2>Accordion</h2>
+		<div class="sample-container">
+			<div id="default-accordion" class="panel-group">
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 1</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 2</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 3</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="panel-body">
-				<p>
-				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-				</p>
-			</div>
+			<script>
+			$(function(){
+				// Accordions are a bit complicated because of substantial markup
+				// diferences. We need to make each pane its own accordion and then
+				// link them using the beforeActivate callback. Then we set the first
+				// one to be open
+				$( "#default-accordion" ).find( ".panel" ).accordion({
+					collapsible: true,
+					active: "false",
+					beforeActivate: function( e , ui ){
+						if( ui.newPanel.length > 0 ){
+							$( this ).parent().children().not( this ).accordion( "option", "active", false );
+						}
+					}
+				}).eq( 0 ).accordion( "option", "active", 0 );
+			});
+			</script>
 		</div>
-		<div class="panel">
-			<div>
-				<h4 class="panel-title">Section 2</h4>
+		<h2>Custom Icons</h2>
+		<div class="sample-container">
+			<div id="icon-accordion" class="panel-group">
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 1</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 2</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
+				<div class="panel">
+					<div>
+						<h4 class="panel-title">Section 3</h4>
+					</div>
+					<div class="panel-body">
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="panel-body">
-				<p>
-				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-				</p>
-			</div>
-		</div>
-		<div class="panel">
-			<div>
-				<h4 class="panel-title">Section 3</h4>
-			</div>
-			<div class="panel-body">
-				<p>
-				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-				</p>
-			</div>
+			<script>
+			$(function(){
+				// Accordions are a bit complicated because of substantial markup
+				// diferences. We need to make each pane its own accordion and then
+				// link them using the beforeActivate callback. Then we set the first
+				// one to be open
+				$( "#icon-accordion" ).find( ".panel" ).accordion({
+					collapsible: true,
+					active: "false",
+					icons: {
+						header: "glyphicon glyphicon-plus",
+						activeHeader: "glyphicon glyphicon-minus"
+					},
+					beforeActivate: function( e , ui ){
+						if( ui.newPanel.length > 0 ){
+							$( this ).parent().children().not( this ).accordion( "option", "active", false );
+						}
+					}
+				}).eq( 0 ).accordion( "option", "active", 0 );
+			});
+			</script>
 		</div>
 	</div>
 	<div id="component-tooltip" class="scroll-link"></div>
 	<h1>Tooltip</h1>
-	<p>Tooltips can be attached to any element. When you hover
-the <a href="#" title="That&apos;s what this widget is">element</a> with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
+	<div class="component-container container" id="button-container">
+		<h2>The tooltip widget</h2>
+		<h2><small>Customizable, themeable tooltips, replacing native tooltips</small></h2>
+		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-tooltip": "tooltip top fade in",
+"ui-tooltip-content": "tooltip-inner"</pre>
+	</div>
+	<br/>
+	<div class="component-container container">
+		<h2>Tooltip</h2>
+		<div class="sample-container tooltip-default">
+			<p>Tooltips can be attached to any element. When you hover
+			the <a href="#" title="That&apos;s what this widget is">element</a> with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
+			<script>
+			$(function(){
+				// Instantiate UI Tooltip and set position options
+				$( ".tooltip-default" ).tooltip({
+					show: false,
+					position: {
+						my: "center bottom",
+						at: "center top",
+						using: function( position, feedback ) {
+							$( this ).css( position );
+							$( "<div>" ).addClass( "tooltip-arrow" ).appendTo( this );
+						}
+					}
+				});
+			});
+			</script>
+		</div>
+		<div class="sample-container tooltip-custom">
+			<div class="ui-widget photo">
+				<div class="ui-widget-header ui-corner-all">
+					<h2>St. Stephen's Cathedral</h2>
+					<h3><a href="http://maps.google.com/maps?q=vienna,+austria&amp;z=11" data-geo="">Vienna, Austria</a></h3>
+				</div>
+				<a href="http://en.wikipedia.org/wiki/File:Wien_Stefansdom_DSC02656.JPG">
+					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wien_Stefansdom_DSC02656.JPG/360px-Wien_Stefansdom_DSC02656.JPG" alt="St. Stephen&apos;s Cathedral" class="ui-corner-all">
+				</a>
+			</div>
+
+			<div class="ui-widget photo">
+				<div class="ui-widget-header ui-corner-all">
+					<h2>Tower Bridge</h2>
+					<h3><a href="http://maps.google.com/maps?q=london,+england&amp;z=11" data-geo="">London, England</a></h3>
+				</div>
+				<a href="http://en.wikipedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg">
+					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tower_bridge_London_Twilight_-_November_2006.jpg/320px-Tower_bridge_London_Twilight_-_November_2006.jpg" alt="Tower Bridge" class="ui-corner-all">
+				</a>
+			</div>
+
+			<p>All images are part of <a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> and are licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a> by the copyright holder.</p>
+			<style>
+			.photo {
+				width: 300px;
+				text-align: center;
+			}
+			.photo .ui-widget-header {
+				margin: 1em 0;
+			}
+			.map {
+				width: 350px;
+				height: 350px;
+			}
+			.ui-tooltip {
+				max-width: 380px;
+			}
+			.tooltip-inner {
+				max-width: 380px;
+			}
+			</style>
+			<script>
+			$(function() {
+				$( ".tooltip-custom" ).tooltip({
+					items: "img, [data-geo], [title]",
+					content: function() {
+						var element = $( this );
+						if ( element.is( "[data-geo]" ) ) {
+							var text = element.text();
+							return "<img class='map' alt='" + text +
+							"' src='http://maps.google.com/maps/api/staticmap?" +
+							"zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
+							text + "'>";
+						}
+						if ( element.is( "[title]" ) ) {
+							return element.attr( "title" );
+						}
+						if ( element.is( "img" ) ) {
+							return element.attr( "alt" );
+						}
+					}
+				});
+			});
+			</script>
+		</div>
+	</div>
 	<div id="component-dialog" class="scroll-link"></div>
 	<h1>Dialog</h1>
 	<button id="open-dialog">Open Dialog</button>

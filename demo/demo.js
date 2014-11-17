@@ -56,7 +56,7 @@ $(function(){
 
   // Apply active style to menu items as we scroll
   $( ".scroll-link" ).waypoint(function(){
-    $( ".active" ).removeClass( "active" );
+    $( "nav .active" ).removeClass( "active" );
     $( "[href$='" + this.id + "']" ).parent().addClass( "active" );
   });
 });
