@@ -5,6 +5,8 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
 	<link href="demo/demo.css" rel="stylesheet" type="text/css" />
 	<link href="external/syntax.css" rel="stylesheet" type="text/css"/>
+	<link href="https://rawgit.com/lipis/bootstrap-social/gh-pages/bootstrap-social.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="external/jquery-ui.min.js"></script>
 	<script src="dist/jqueryui-bootstrap-adapter.min.js"></script>
@@ -39,13 +41,25 @@
 				<li><a href="#component-progressbar">Progressbar</a></li>
 				<li><a href="#component-menu">Menu</a></li>
 			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/arschmitz/jqueryui-bootstrap-addapter" class="social-button" href="https://github.com/arschmitz/jqueryui-bootstrap-addapter"><i class="fa fa-github"></i><span class="sr-only">Github</span></a></li>
+				<li><a href="https://twitter.com/alexrschmitz/" class="social-button" href="https://github.com/arschmitz/jqueryui-bootstrap-addapter"><i class="fa fa-twitter"></i><span class="sr-only">Github</span></a></li>
+			</ul>
 		</div>
 	</div>
 </nav>
 <div class="jumbotron">
 	<div class="container">
+		<br/>
 		<h1>jQuery UI + Bootstrap</h1>
 		<p>The jQuery UI Bootstrap adapter is a very small js file ( 1.6kb min and gzip ) which changes the jQuery UI Classes presets to use the Twitter Bootstrap theme</p>
+	</div>
+</div>
+<div class="container">
+	<div class="component-container container bg-warning">
+		<div class="text-center"><h1><small>THIS WILL NOT WORK WITH CURRENT STABLE VERSION OF jQuery UI!</small></h1></div>
+		<p class="lead">The classes option will be in the jQuery UI 1.12</p>
+		<p class="lead">An expiramental copy of jQuery UI containing the classes option and several new widgets is included in this repository</p>
 	</div>
 </div>
 <div class="container">
@@ -248,7 +262,7 @@
 	</div>
 	<div id="component-splitbutton" class="scroll-link"></div>
 	<h1>Split Button</h1>
-	<div class="component-container container" id="button-container">
+	<div class="component-container container">
 		<h2>The splitbutton</h2>
 		<h2><small>Combines a regular button and a dropdown into a single button. the split button is not a widget in jQuery UI on its own but instead is just a combination of a button widget and a selectmenu widget in a container.</small></h2>
 		<p><a href="http://api.jqueryui.com/controlgroup/splitbutton">API Documentation</a></p>
@@ -283,7 +297,7 @@
 	</div>
 	<div id="component-tabs" class="scroll-link"></div>
 	<h1>Tabs</h1>
-	<div class="component-container container" id="button-container">
+	<div class="component-container container">
 		<h2>The tabs widget</h2>
 		<h2><small>A single content area with multiple panels, each associated with a header in a list.</small></h2>
 		<p><a href="http://api.jqueryui.com/tabs/">API Documentation</a></p>
@@ -452,7 +466,7 @@
 	</div>
 	<div id="component-accordion" class="scroll-link"></div>
 	<h1>Accordion</h1>
-	<div class="component-container container" id="button-container">
+	<div class="component-container container">
 		<h2>The accordion widget</h2>
 		<h2><small>Displays collapsible content panels for presenting information in a limited amount of space.</small></h2>
 		<p><a href="http://api.jqueryui.com/accordion/">API Documentation</a></p>
@@ -595,7 +609,7 @@
 	</div>
 	<div id="component-tooltip" class="scroll-link"></div>
 	<h1>Tooltip</h1>
-	<div class="component-container container" id="button-container">
+	<div class="component-container container">
 		<h2>The tooltip widget</h2>
 		<h2><small>Customizable, themeable tooltips, replacing native tooltips</small></h2>
 		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
@@ -634,7 +648,7 @@
 					<h3><a href="http://maps.google.com/maps?q=vienna,+austria&amp;z=11" data-geo="">Vienna, Austria</a></h3>
 				</div>
 				<a href="http://en.wikipedia.org/wiki/File:Wien_Stefansdom_DSC02656.JPG">
-					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wien_Stefansdom_DSC02656.JPG/360px-Wien_Stefansdom_DSC02656.JPG" alt="St. Stephen&apos;s Cathedral" class="ui-corner-all">
+					<img src="http://bit.ly/1A5rM1L" alt="St. Stephen&apos;s Cathedral" class="ui-corner-all">
 				</a>
 			</div>
 
@@ -644,11 +658,14 @@
 					<h3><a href="http://maps.google.com/maps?q=london,+england&amp;z=11" data-geo="">London, England</a></h3>
 				</div>
 				<a href="http://en.wikipedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg">
-					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tower_bridge_London_Twilight_-_November_2006.jpg/320px-Tower_bridge_London_Twilight_-_November_2006.jpg" alt="Tower Bridge" class="ui-corner-all">
+					<img src="http://bit.ly/14wZOik" alt="Tower Bridge" class="ui-corner-all">
 				</a>
 			</div>
 
-			<p>All images are part of <a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> and are licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a> by the copyright holder.</p>
+			<p>All images are part of <a href="http://commons.wikimedia.org/wiki/Main_Page">
+			Wikimedia Commons</a> and are licensed under 
+			<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a> 
+			by the copyright holder.</p>
 			<style>
 			.photo {
 				width: 300px;
@@ -695,8 +712,78 @@
 	</div>
 	<div id="component-dialog" class="scroll-link"></div>
 	<h1>Dialog</h1>
-	<button id="open-dialog">Open Dialog</button>
-	<div id="dialog" title="jQuery UI + Bootstrap">I'm a dialog!</div>
+	<div class="component-container container">
+		<h2>The dialog widget</h2>
+		<h2><small>Open content in an interactive overlay.</small></h2>
+		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-dialog": "modal-content",
+"ui-dialog-titlebar": "modal-header",
+"ui-dialog-title": "modal-title",
+"ui-dialog-titlebar-close": "close",
+"ui-dialog-content": "modal-body",
+"ui-dialog-buttonpane": "modal-footer"</pre>
+	</div>
+	<br/>
+	<div class="component-container container">
+		<h2>Default Dialog</h2>
+		<div class="sample-container">
+			<div id="dialog" title="jQuery UI + Bootstrap">I'm a dialog!</div>
+			<button id="open-dialog">Open Dialog</button>
+			<script>
+			$(function(){
+				// Instantiate UI Dialog
+				$( "#dialog" ).dialog({
+					autoOpen: false,
+					buttons: [
+						{
+							text: "foo",
+							"class": "btn-primary",
+							click: $.noop
+						}
+					]
+				});
+				$( "#open-dialog" ).button().click(function(){
+					$( "#dialog" ).dialog( "open" );
+				});
+			});
+			</script>
+		</div>
+		<h2>Animated Dialog</h2>
+		<div class="sample-container">
+			<button id="open-dialog-animated">Open Animated Dialog</button>
+			<div id="dialog-animated" title="Basic dialog">
+				<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+			</div>
+			<script>
+			$(function(){
+				// Instantiate UI Dialog
+				$( "#dialog-animated" ).dialog({
+					autoOpen: false,
+					buttons: [
+						{
+							text: "foo",
+							"class": "btn-primary",
+							click: $.noop
+						}
+					],
+					show: {
+						effect: "bounce",
+						duration: 1000
+					},
+					hide: {
+						effect: "explode",
+						duration: 1000
+					}
+				});
+				$( "#open-dialog-animated" ).button().click(function(){
+					$( "#dialog-animated" ).dialog( "open" );
+				});
+			});
+			</script>
+		</div>
+	</div>
 	<div id="component-progressbar" class="scroll-link"></div>
 	<h1>Progressbar</h1>
 	<div id="progressbar"></div>

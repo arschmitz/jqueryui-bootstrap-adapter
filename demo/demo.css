@@ -23,3 +23,11 @@
 .toolbar {
 	display: none;
 }
+.social-button {
+	font-size:2.8em;
+	padding: 5px !important;
+}
+.navbar-right {
+	right: 20px;
+	position: relative;
+}
