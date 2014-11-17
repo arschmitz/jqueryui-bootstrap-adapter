@@ -42,7 +42,7 @@
 				<li><a href="#component-menu">Menu</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://github.com/arschmitz/jqueryui-bootstrap-addapter" class="social-button" href="https://github.com/arschmitz/jqueryui-bootstrap-addapter"><i class="fa fa-github"></i><span class="sr-only">Github</span></a></li>
+				<li><a href="https://github.com/arschmitz/jqueryui-bootstrap-addapter" class="social-button" href="https://github.com/arschmitz/jqueryui-bootstrap-adapter"><i class="fa fa-github"></i><span class="sr-only">Github</span></a></li>
 				<li><a href="https://twitter.com/alexrschmitz/" class="social-button" href="https://github.com/arschmitz/jqueryui-bootstrap-addapter"><i class="fa fa-twitter"></i><span class="sr-only">Github</span></a></li>
 			</ul>
 		</div>
@@ -786,7 +786,32 @@
 	</div>
 	<div id="component-progressbar" class="scroll-link"></div>
 	<h1>Progressbar</h1>
-	<div id="progressbar"></div>
+	<div class="component-container container">
+		<h2>The progressbar widget</h2>
+		<h2><small>Display status of a determinate or indeterminate process.</small></h2>
+		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>
+"ui-progressbar": "progress",
+"ui-progressbar-value": "progress-bar"</pre>
+	</div>
+	<br/>
+	<div class="component-container container">
+		<h2>Default Progressbar</h2>
+		<div class="sample-container">
+			<div id="progressbar"></div>
+			<script>
+			$(function(){
+				$( "#progressbar" ).progressbar({ value: 42 });
+			});
+			</script>
+		</div>
+		<div class="sample-container">
+			<script>
+
+			</script>
+		</div>
+	</div>
 	<div id="component-menu" class="scroll-link"></div>
 	<h1>Menu</h1>
 	<ul id="menu">
