@@ -50,3 +50,6 @@ padding: 3px 1em 3px .4em;
 .panel-title {
   display:inline;
 }
+.progress-bar {
+  transition: none;
+}
