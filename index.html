@@ -11,6 +11,7 @@
 	<script src="external/jquery-ui.min.js"></script>
 	<script src="dist/jqueryui-bootstrap-adapter.min.js"></script>
 	<script src="external/syntax.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 	<script src="demo/code_sample.js"></script>
 	<script src="demo/demo.js"></script>
@@ -91,7 +92,6 @@
 				});
 			</script>
 		</div>
-		<hr>
 		<h2>Button Sizes</h2>
 		<div class="sample-container button-size">
 			<button class="btn-lg">Button Large</button>
@@ -105,7 +105,6 @@
 				});
 			</script>
 		</div>
-		<hr>
 		<h2>Buttons With Icons</h2>
 		<div class="sample-container">
 			<button id="button-tree">Button with tree </button>
@@ -309,7 +308,7 @@
 	</div>
 	<br/>
 	<div class="component-container container">
-		<h2>Tabs</h2>
+		<h2>Default Tabs</h2>
 		<div class="sample-container">
 			<div id="tabs">
 				<ul>
@@ -480,7 +479,7 @@
 	</div>
 	<br/>
 	<div class="component-container container">
-		<h2>Accordion</h2>
+		<h2>Default Accordion</h2>
 		<div class="sample-container">
 			<div id="default-accordion" class="panel-group">
 				<div class="panel">
@@ -541,7 +540,7 @@
 			});
 			</script>
 		</div>
-		<h2>Custom Icons</h2>
+		<h2>Accordion With Custom Icons</h2>
 		<div class="sample-container">
 			<div id="icon-accordion" class="panel-group">
 				<div class="panel">
@@ -620,7 +619,7 @@
 	</div>
 	<br/>
 	<div class="component-container container">
-		<h2>Tooltip</h2>
+		<h2>Default Tooltip</h2>
 		<div class="sample-container tooltip-default">
 			<p>Tooltips can be attached to any element. When you hover
 			the <a href="#" title="That&apos;s what this widget is">element</a> with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
@@ -642,6 +641,7 @@
 			</script>
 		</div>
 		<div class="sample-container tooltip-custom">
+			<h2>Custom Tooltip Content</h2>
 			<div class="ui-widget photo">
 				<div class="ui-widget-header ui-corner-all">
 					<h2>St. Stephen's Cathedral</h2>
@@ -715,7 +715,7 @@
 	<div class="component-container container">
 		<h2>The dialog widget</h2>
 		<h2><small>Open content in an interactive overlay.</small></h2>
-		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
+		<p><a href="http://api.jqueryui.com/dialog/">API Documentation</a></p>
 		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
 		<pre>
 "ui-dialog": "modal-content",
@@ -789,7 +789,7 @@
 	<div class="component-container container">
 		<h2>The progressbar widget</h2>
 		<h2><small>Display status of a determinate or indeterminate process.</small></h2>
-		<p><a href="http://api.jqueryui.com/tooltip/">API Documentation</a></p>
+		<p><a href="http://api.jqueryui.com/progressbar/">API Documentation</a></p>
 		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
 		<pre>
 "ui-progressbar": "progress",
@@ -854,40 +854,110 @@
 	</div>
 	<div id="component-menu" class="scroll-link"></div>
 	<h1>Menu</h1>
-	<ul id="menu">
-		<li class="ui-state-disabled"><div>Aberdeen</div></li>
-		<li><div>Ada</div></li>
-		<li><div>Adamsville</div></li>
-		<li><div>Addyston</div></li>
-		<li><div>Delphi</div>
-			<ul>
-				<li class="ui-state-disabled"><div>Ada</div></li>
+	<div class="component-container container">
+		<h2>The Menu widget</h2>
+		<h2><small>Themeable menu with mouse and keyboard interactions for navigation.</small></h2>
+		<p><a href="http://api.jqueryui.com/menu/">API Documentation</a></p>
+		<h4>The Bootstrap adapter makes the fllowing change to the classes option defaults:</h4>
+		<pre>"ui-menu": "list-group",
+"ui-menu-icons": "",
+"ui-menu-icon": "glyphicon glyphicon-chevron-right",
+"ui-menu-item": "list-group-item",
+"ui-menu-divider": "",
+"ui-menu-item-wrapper": ""</pre>
+	</div>
+	<br/>
+	<div class="component-container container">
+		<h2>Default Menu</h2>
+		<div class="sample-container">
+			<ul id="menu">
+				<li class="ui-state-disabled"><div>Aberdeen</div></li>
+				<li><div>Ada</div></li>
+				<li><div>Adamsville</div></li>
+				<li><div>Addyston</div></li>
+				<li><div>Delphi</div>
+					<ul>
+						<li class="ui-state-disabled"><div>Ada</div></li>
+						<li><div>Saarland</div></li>
+						<li><div>Salzburg an der schönen Donau</div></li>
+					</ul>
+				</li>
 				<li><div>Saarland</div></li>
-				<li><div>Salzburg an der schönen Donau</div></li>
-			</ul>
-		</li>
-		<li><div>Saarland</div></li>
-		<li><div>Salzburg</div>
-			<ul>
-				<li><div>Delphi</div>
+				<li><div>Salzburg</div>
 					<ul>
-						<li><div>Ada</div></li>
-						<li><div>Saarland</div></li>
-						<li><div>Salzburg</div></li>
+						<li><div>Delphi</div>
+							<ul>
+								<li><div>Ada</div></li>
+								<li><div>Saarland</div></li>
+								<li><div>Salzburg</div></li>
+							</ul>
+						</li>
+						<li><div>Delphi</div>
+							<ul>
+								<li><div>Ada</div></li>
+								<li><div>Saarland</div></li>
+								<li><div>Salzburg</div></li>
+							</ul>
+						</li>
+						<li><div>Perch</div></li>
 					</ul>
 				</li>
-				<li><div>Delphi</div>
+				<li class="ui-state-disabled"><div>Amesville</div></li>
+			</ul>
+			<script>
+			$(function(){
+				$( "#menu" ).menu();
+			});
+			</script>
+		</div>
+		<h2>Menu with icons</h2>
+		<div class="sample-container">
+		<ul id="menu-icons">
+				<li>
+					<div><span class="glyphicon glyphicon-floppy-disk"></span>Save</div>
+				</li>
+				<li>
+					<div><span class="glyphicon glyphicon-zoom-in"></span>Zoom In</div>
+				</li>
+				<li>
+					<div><span class="glyphicon glyphicon-zoom-out"></span>Zoom Out</div>
+				</li>
+				<li class="ui-state-disabled">
+					<div><span class="glyphicon glyphicon-print"></span>Print...</div>
+				</li>
+				<li>
+					<div>Playback</div>
 					<ul>
-						<li><div>Ada</div></li>
-						<li><div>Saarland</div></li>
-						<li><div>Salzburg</div></li>
+						<li>
+							<div><span class="glyphicon glyphicon-step-backward"></span>Prev</div>
+						</li>
+						<li>
+							<div><span class="glyphicon glyphicon-stop"></span>Stop</div>
+						</li>
+						<li>
+							<div><span class="glyphicon glyphicon-play"></span>Play</div>
+						</li>
+						<li>
+							<div><span class="glyphicon glyphicon-step-forward"></span>Next</div>
+						</li>
 					</ul>
 				</li>
-				<li><div>Perch</div></li>
+				<li>
+					<div>Learn more about this menu</div>
+				</li>
 			</ul>
-		</li>
-		<li class="ui-state-disabled"><div>Amesville</div></li>
-	</ul>
+			<style>
+			.ui-menu .glyphicon {
+				margin-right: 1em;
+			}
+			</style>
+			<script>
+			$(function(){
+				$( "#menu-icons" ).menu();
+			});
+			</script>
+		</div>
+	</div>
 </div>
 </body>
 </html>
