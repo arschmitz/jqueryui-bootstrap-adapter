@@ -1,40 +1,45 @@
 {
-	"name": "jqueryui-bootstrap-adapter",
-	"title": "jQuery UI Bootstrap Adapter",
-	"description": "A set of default values to make jQuery UI work with Twitter bootstrap",
-	"version": "0.0.0",
-	"homepage": "https://github.com/arschmitz/jqueryui-bootstrap-adapter",
-	"author": {
-		"name": "Alexander Schmitz",
-		"url": "https://github.com/arschmitz/"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/arschmitz/jqueryui-bootstrap-adapter.git"
-	},
-	"bugs": "https://github.com/arschmitz/jqueryui-bootstrap-adapter/issues/",
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "https://github.com/arschmitz/jqueryui-bootstrap-adapter/blob/master/LICENSE.txt"
-		}
-	],
-	"scripts": {
-		"test": "grunt"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"commitplease": "2.0.0",
-		"grunt": "0.4.2",
-		"grunt-bowercopy": "1.1.0",
-		"grunt-contrib-concat": "0.1.3",
-		"grunt-contrib-csslint": "0.2.0",
-		"grunt-contrib-watch": "0.6.1",
-		"grunt-contrib-jshint": "0.7.1",
-		"grunt-contrib-uglify": "0.1.1",
-		"grunt-html": "1.0.0",
-		"grunt-jscs": "0.6.2",
-		"load-grunt-tasks": "0.3.0"
-	},
-	"keywords": [ "jquery", "jqueryui", "twitter", "bootstrap" ]
+  "name": "jqueryui-bootstrap-adapter",
+  "title": "jQuery UI Bootstrap Adapter",
+  "description": "A set of default values to make jQuery UI work with Twitter bootstrap",
+  "version": "0.0.1",
+  "homepage": "https://github.com/arschmitz/jqueryui-bootstrap-adapter",
+  "author": {
+    "name": "Alexander Schmitz",
+    "url": "https://github.com/arschmitz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arschmitz/jqueryui-bootstrap-adapter.git"
+  },
+  "bugs": "https://github.com/arschmitz/jqueryui-bootstrap-adapter/issues/",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/arschmitz/jqueryui-bootstrap-adapter/blob/master/LICENSE.txt"
+    }
+  ],
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "commitplease": "2.0.0",
+    "grunt": "0.4.2",
+    "grunt-bowercopy": "1.1.0",
+    "grunt-contrib-concat": "0.1.3",
+    "grunt-contrib-csslint": "0.2.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-jshint": "0.7.1",
+    "grunt-contrib-uglify": "0.1.1",
+    "grunt-html": "1.0.0",
+    "grunt-jscs": "0.6.2",
+    "load-grunt-tasks": "0.3.0"
+  },
+  "keywords": [
+    "jquery",
+    "jqueryui",
+    "twitter",
+    "bootstrap"
+  ]
 }
