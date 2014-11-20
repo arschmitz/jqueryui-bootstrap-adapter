@@ -8,9 +8,7 @@
 (function( $, undefined ) {
 
 	// Conversion of progressbar classes to Bootstrap
-	$.extend( $.ui.progressbar.prototype.options.classes, {
-		"ui-progressbar": "progress",
-		"ui-progressbar-value": "progress-bar"
-	});
+	$.ui.progressbar.prototype.options.classes[ "ui-progressbar" ] = "progress";
+	$.ui.progressbar.prototype.options.classes[ "ui-progressbar-value" ] = "progress-bar";
 
 })(jQuery);

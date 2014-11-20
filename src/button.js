@@ -8,9 +8,7 @@
 (function( $, undefined ) {
 
 	// Conversion of button classes to Bootstrap
-	$.extend( $.ui.button.prototype.options.classes, {
-		"ui-button": "btn btn-default",
-		"ui-button-icon": "glyphicon"
-	});
+	$.ui.button.prototype.options.classes[ "ui-button" ] = "btn btn-default";
+	$.ui.button.prototype.options.classes[ "ui-button-icon" ] = "glyphicon";
 
 })(jQuery);

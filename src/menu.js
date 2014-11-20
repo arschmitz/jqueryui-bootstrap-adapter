@@ -8,13 +8,11 @@
 (function( $, undefined ) {
 
 	// Conversion of menu classes to Bootstrap
-	$.extend( $.ui.menu.prototype.options.classes, {
-		"ui-menu": "list-group",
-		"ui-menu-icons": "",
-		"ui-menu-icon": "glyphicon glyphicon-chevron-right",
-		"ui-menu-item": "list-group-item",
-		"ui-menu-divider": "",
-		"ui-menu-item-wrapper": ""
-	});
+	$.ui.menu.prototype.options.classes[ "ui-menu" ] = "list-group";
+	$.ui.menu.prototype.options.classes[ "ui-menu-icons" ] = "";
+	$.ui.menu.prototype.options.classes[ "ui-menu-icon" ] = "glyphicon glyphicon-chevron-right";
+	$.ui.menu.prototype.options.classes[ "ui-menu-item" ] = "list-group-item";
+	$.ui.menu.prototype.options.classes[ "ui-menu-divider" ] = "";
+	$.ui.menu.prototype.options.classes[ "ui-menu-item-wrapper" ] = "";
 
 })(jQuery);

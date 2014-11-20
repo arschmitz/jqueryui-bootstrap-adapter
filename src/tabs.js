@@ -8,10 +8,8 @@
 (function( $, undefined ) {
 
 	// Conversion of tabs classes to Bootstrap
-	$.extend( $.ui.tabs.prototype.options.classes, {
-		"ui-tabs-nav": "nav nav-tabs",
-		"ui-tabs-panel": "tab-pane",
-		"ui-tabs-active": "active"
-	});
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-nav" ] = "nav nav-tabs";
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-panel" ] = "tab-pane";
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-active" ] = "active";
 
 })(jQuery);

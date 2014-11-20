@@ -8,13 +8,11 @@
 (function( $, undefined ) {
 
 	// Converstion of dialog classes to Bootstrap
-	$.extend( $.ui.dialog.prototype.options.classes, {
-		"ui-dialog": "modal-content",
-		"ui-dialog-titlebar": "modal-header",
-		"ui-dialog-title": "modal-title",
-		"ui-dialog-titlebar-close": "close",
-		"ui-dialog-content": "modal-body",
-		"ui-dialog-buttonpane": "modal-footer"
-	});
+	$.ui.dialog.prototype.options.classes[ "ui-dialog" ] = "modal-content";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-titlebar" ] = "modal-header";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-title" ] = "modal-title";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-titlebar-close" ] = "close";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-content" ] = "modal-body";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-buttonpane" ] = "modal-footer";
 
 })(jQuery);

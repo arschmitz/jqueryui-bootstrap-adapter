@@ -8,12 +8,10 @@
 (function( $, undefined ) {
 
 	// Conversion of accordion classes to Bootstrap
-	$.extend( $.ui.accordion.prototype.options.classes, {
-		"ui-accordion": "panel panel-default",
-		"ui-accordion-content": "panel-collapse collapse",
-		"ui-accordion-content-active": "in",
-		"ui-accordion-header": "panel-heading"
-	});
+	$.ui.accordion.prototype.options.classes[ "ui-accordion" ] = "panel panel-default";
+	$.ui.accordion.prototype.options.classes[ "ui-accordion-content" ] = "panel-collapse collapse";
+	$.ui.accordion.prototype.options.classes[ "ui-accordion-content-active" ] = "in";
+	$.ui.accordion.prototype.options.classes[ "ui-accordion-header" ] = "panel-heading";
 
 })(jQuery);
 ;/*!
@@ -26,10 +24,8 @@
 (function( $, undefined ) {
 
 	// Conversion of button classes to Bootstrap
-	$.extend( $.ui.button.prototype.options.classes, {
-		"ui-button": "btn btn-default",
-		"ui-button-icon": "glyphicon"
-	});
+	$.ui.button.prototype.options.classes[ "ui-button" ] = "btn btn-default";
+	$.ui.button.prototype.options.classes[ "ui-button-icon" ] = "glyphicon";
 
 })(jQuery);
 ;/*!
@@ -42,14 +38,12 @@
 (function( $, undefined ) {
 
 	// Converstion of dialog classes to Bootstrap
-	$.extend( $.ui.dialog.prototype.options.classes, {
-		"ui-dialog": "modal-content",
-		"ui-dialog-titlebar": "modal-header",
-		"ui-dialog-title": "modal-title",
-		"ui-dialog-titlebar-close": "close",
-		"ui-dialog-content": "modal-body",
-		"ui-dialog-buttonpane": "modal-footer"
-	});
+	$.ui.dialog.prototype.options.classes[ "ui-dialog" ] = "modal-content";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-titlebar" ] = "modal-header";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-title" ] = "modal-title";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-titlebar-close" ] = "close";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-content" ] = "modal-body";
+	$.ui.dialog.prototype.options.classes[ "ui-dialog-buttonpane" ] = "modal-footer";
 
 })(jQuery);
 ;/*!
@@ -62,14 +56,12 @@
 (function( $, undefined ) {
 
 	// Conversion of menu classes to Bootstrap
-	$.extend( $.ui.menu.prototype.options.classes, {
-		"ui-menu": "list-group",
-		"ui-menu-icons": "",
-		"ui-menu-icon": "glyphicon glyphicon-chevron-right",
-		"ui-menu-item": "list-group-item",
-		"ui-menu-divider": "",
-		"ui-menu-item-wrapper": ""
-	});
+	$.ui.menu.prototype.options.classes[ "ui-menu" ] = "list-group";
+	$.ui.menu.prototype.options.classes[ "ui-menu-icons" ] = "";
+	$.ui.menu.prototype.options.classes[ "ui-menu-icon" ] = "glyphicon glyphicon-chevron-right";
+	$.ui.menu.prototype.options.classes[ "ui-menu-item" ] = "list-group-item";
+	$.ui.menu.prototype.options.classes[ "ui-menu-divider" ] = "";
+	$.ui.menu.prototype.options.classes[ "ui-menu-item-wrapper" ] = "";
 
 })(jQuery);
 ;/*!
@@ -82,10 +74,8 @@
 (function( $, undefined ) {
 
 	// Conversion of progressbar classes to Bootstrap
-	$.extend( $.ui.progressbar.prototype.options.classes, {
-		"ui-progressbar": "progress",
-		"ui-progressbar-value": "progress-bar"
-	});
+	$.ui.progressbar.prototype.options.classes[ "ui-progressbar" ] = "progress";
+	$.ui.progressbar.prototype.options.classes[ "ui-progressbar-value" ] = "progress-bar";
 
 })(jQuery);
 ;/*!
@@ -97,12 +87,11 @@
  */
 (function( $, undefined ) {
 
-	$.extend( $.ui.selectmenu.prototype.options.classes, {
-		"ui-selectmenu-button": "btn btn-default dropdown-toggle",
-		"ui-selectmenu-open": "open"
-	});
+	$.ui.selectmenu.prototype.options.classes[ "ui-selectmenu-button" ] = "btn btn-default dropdown-toggle";
+	$.ui.selectmenu.prototype.options.classes[ "ui-selectmenu-open" ] = "open" ;
 	$.ui.selectmenu.prototype.options.icons.button = "caret";
 	$.ui.selectmenu.prototype.options.width = "auto";
+
 })(jQuery);
 ;/*!
  * jQuery UI Tabs Bootstrap Adapter
@@ -114,11 +103,9 @@
 (function( $, undefined ) {
 
 	// Conversion of tabs classes to Bootstrap
-	$.extend( $.ui.tabs.prototype.options.classes, {
-		"ui-tabs-nav": "nav nav-tabs",
-		"ui-tabs-panel": "tab-pane",
-		"ui-tabs-active": "active"
-	});
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-nav" ] = "nav nav-tabs";
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-panel" ] = "tab-pane";
+	$.ui.tabs.prototype.options.classes[ "ui-tabs-active" ] = "active";
 
 })(jQuery);
 ;/*!
@@ -131,9 +118,7 @@
 (function( $, undefined ) {
 
 	// Conversion of tooltip classes to Bootstrap
-	$.extend( $.ui.tooltip.prototype.options.classes, {
-		"ui-tooltip": "tooltip top fade in",
-		"ui-tooltip-content": "tooltip-inner"
-	});
+	$.ui.tooltip.prototype.options.classes[ "ui-tooltip" ] = "tooltip top fade in";
+	$.ui.tooltip.prototype.options.classes[ "ui-tooltip-content" ] = "tooltip-inner";
 
 })(jQuery);

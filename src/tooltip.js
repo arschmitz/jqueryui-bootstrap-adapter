@@ -8,9 +8,7 @@
 (function( $, undefined ) {
 
 	// Conversion of tooltip classes to Bootstrap
-	$.extend( $.ui.tooltip.prototype.options.classes, {
-		"ui-tooltip": "tooltip top fade in",
-		"ui-tooltip-content": "tooltip-inner"
-	});
+	$.ui.tooltip.prototype.options.classes[ "ui-tooltip" ] = "tooltip top fade in";
+	$.ui.tooltip.prototype.options.classes[ "ui-tooltip-content" ] = "tooltip-inner";
 
 })(jQuery);
