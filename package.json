@@ -2,7 +2,7 @@
   "name": "jqueryui-bootstrap-adapter",
   "title": "jQuery UI Bootstrap Adapter",
   "description": "A set of default values to make jQuery UI work with Twitter bootstrap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/arschmitz/jqueryui-bootstrap-adapter",
   "author": {
     "name": "Alexander Schmitz",
